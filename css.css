@@ -1,0 +1,250 @@
+body {
+    background-color: #f0d8b8;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-weight: bold;
+
+}
+
+nav {
+    background-color: rgb(255, 105, 105);
+    text-align: center;
+    padding: 10px 30px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(139, 139, 255);
+    color: white;
+}
+
+div h1 {
+    text-align: left;
+}
+
+.quote-box {
+    background-color: white;
+    text-align: center;
+    border: 2px solid black;
+    width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-container {
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.button-49,
+.button-49:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 10px;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'DIVE IN';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+
+.audio-box {
+    background-color: rgb(27, 143, 85);
+    color: white;
+    width: 810px;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.audio-box h2 {
+    font-size: xx-large;
+    font-weight:bold;
+}
+
+.audio-button-container{
+    text-align: center;
+}
+
+.audio-button {
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+    background-color: white;
+    width: 350px;
+    height: 40px;
+    margin: 10px;
+}
+
+button.submit {
+  background-color: rgb(93, 216, 93);
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+button.submit:hover {
+  background-color: darkgreen;
+}
+
+#stockTable {
+  border: 1px solid black;
+  background-color: white;
+}
+
+#stockTable th,
+#stockTable td {
+  border: 1px solid black;
+  background-color: white;
+}
+
+#myChart {
+  display: none;
+  background-color: white;
+}
+
+.dog-images-slider {
+  width: 612px;
+  height: 612px;
+  margin: 0 auto;
+}
+
+#breed-info {
+  background-color: lightgray;
+}
+
+#breed-buttons {
+  text-align: center;
+}
+
+.dog-button {
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  width: fit-content;
+  height: 40px;
+}
+
+.dog-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+}
