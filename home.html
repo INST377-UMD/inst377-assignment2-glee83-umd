@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>INST377 - Activities</title>
+        <script src="home.js" defer></script>
+        <link rel="stylesheet" href="css.css">
+    </head>
+
+    <body>
+        <h1>INST377 - Activities</h1>
+
+        <nav>
+            <ul>
+                <li><a href="home.html" class="link">Home</a></li>
+                <li><a href="stocks.html" class="link">Stocks</a></li>
+                <li><a href="dogs.html" class="link">Dogs</a></li>
+            </ul>
+        </nav>
+
+        <div class="button-container">
+            <h2>These are some different activities we can try!</h2>
+
+            <button class="button-49" onclick="location.href='stocks.html'" role="button">Stocks</button>
+            <button class="button-49" onclick="location.href='dogs.html'" role="button">Dogs</button>
+
+            <div class="quote-box">
+                <h2>Quote of the Page Load</h2>
+                <blockquote id="quote"></blockquote>
+            </div>
+
+            <br>
+
+            <div class="audio-box">
+                <h2>In this web page there are options to Navigate using Audio!</h2>
+                <p>Ensure your Mic is enabled to be able to use this feature</p>
+                <ul>
+                    <li>Navigate to a Different Page
+                        <ul><li>Say: <strong>Navigate to &lt;page&gt;</strong></li></ul>
+                    </li>
+                    <li>Change the Page Color
+                        <ul><li>Say: <strong>Change the color to &lt;color&gt;</strong></li></ul>
+                    </li>
+                    <li>Say Hello Back to you
+                        <ul><li>Say: <strong>Hello</strong></li></ul>
+                    </li>
+                </ul>
+
+                <div class="audio-button-container">
+                <button class="audio-button" onclick="annyang.start()">Turn On Listening</button>
+                <button class="audio-button" onclick="annyang.abort()">Turn Off Listening</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
